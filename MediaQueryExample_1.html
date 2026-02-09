@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Media Query Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* Default background color */
+        body {
+            background-color: pink;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+            transition: 0.3s ease;
+        }
+
+        h1 {
+            color: black;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        /* Media Query */
+        @media screen and (min-width: 480px) {
+            body {
+                background-color: lightgreen;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Media Query Demo</h1>
+    <p>
+        Resize the browser window.<br>
+        If the screen width is less than 480px → Background is Pink.<br>
+        If the screen width is 480px or more → Background becomes Light Green.
+    </p>
+
+</body>
+</html>
