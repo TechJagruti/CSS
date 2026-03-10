@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Attribute Selectors Example</title>
+
+<style>
+
+/* 1. [attribute]
+   Selects elements that have the specified attribute */
+input[type]{
+    background-color: lightyellow;
+}
+
+/* 2. [attribute=value]
+   Selects elements with an exact attribute value */
+input[type="text"]{
+    border: 2px solid blue;
+}
+
+/* 3. [attribute~=value]
+   Selects elements whose attribute contains a word */
+p[class~="highlight"]{
+    color: red;
+}
+
+/* 4. [attribute|=value]
+   Selects elements whose attribute value starts with the value or value- */
+p[lang|="en"]{
+    background-color: lightgreen;
+}
+
+/* 5. [attribute^=value]
+   Selects elements whose attribute value starts with value */
+a[href^="https"]{
+    color: green;
+}
+
+/* 6. [attribute$=value]
+   Selects elements whose attribute value ends with value */
+a[href$=".pdf"]{
+    color: purple;
+}
+
+/* 7. [attribute*=value]
+   Selects elements whose attribute value contains value */
+a[href*="google"]{
+    font-weight: bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<h2>CSS Attribute Selector Example</h2>
+
+<!-- attribute selector -->
+<input type="text" placeholder="Text input">
+<input type="password" placeholder="Password input">
+
+<br><br>
+
+<!-- attribute~=value -->
+<p class="text highlight">This paragraph contains class highlight</p>
+
+<!-- attribute|=value -->
+<p lang="en">English paragraph</p>
+<p lang="en-US">US English paragraph</p>
+
+<br>
+
+<!-- attribute^=value -->
+<a href="https://example.com">Secure Link</a>
+
+<br><br>
+
+<!-- attribute$=value -->
+<a href="document.pdf">Download PDF</a>
+
+<br><br>
+
+<!-- attribute*=value -->
+<a href="https://www.google.com">Google Website</a>
+
+</body>
+</html>
